@@ -1,4 +1,8 @@
-function changeWeather(response) {}
+function changeWeather(response) {
+  console.log(response.data);
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = response.data.temperature.current;
+}
 
 function searchCity(city) {
   let apiKey = "683ca4t0db1024efbc065a4o1b7796e4";
